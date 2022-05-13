@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  color: #fff;
+  font-weight: 300;
+}
+
+.container {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.header {
+  background-image: url(./images/bg-desktop.svg);
+  background-color: hsl(257, 40%, 49%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.hero-wrapper {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 7rem;
+  margin-top: 7rem;
+}
+
+.img-box img {
+  display: block;
+  width: 100%;
+}
+
+.text-box-heading {
+  font-size: 3rem;
+  margin: 2rem 0 3rem 0;
+  font-weight: 300;
+}
+
+.text-box-para {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+.btn {
+   color: hsl(257, 40%, 49%);
+   font-size: 2rem;
+   font-weight: 500;
+   outline: none;
+   border: none;
+   padding: 1.5rem 8rem;
+   border-radius: 3rem;
+   margin-bottom: 15rem;
+}
+
+.btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+.icon-box-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.icon-box {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.icon {
+  width: 4rem;
+  height: 4rem;
+  
+}
+
+.attribution {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #000;
+}
+.attribution a {
+  color: hsl(233, 33%, 95%);
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    background-image: url(./images/bg-mobile.svg);
+    background-color: hsl(257, 40%, 49%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  }
+  
+  .header-logo img {
+    width: 20rem;
+    height: 15rem;
+  }
+
+  .hero-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    text-align: center;
+  }
+
+  .icon-box-wrapper {
+    justify-content: center;
+  }
+}
